@@ -3,9 +3,9 @@ package com.example.todolistapp
 import android.app.Application
 import com.example.todolistapp.di.appModule
 import org.koin.android.ext.koin.androidContext
-import org.koin.core.context.GlobalContext.startKoin
+import org.koin.core.context.startKoin
 
-class ApplicationActivity : Application(){
+class ApplicationActivity : Application() {
     override fun onCreate() {
         super.onCreate()
         startKoin {
