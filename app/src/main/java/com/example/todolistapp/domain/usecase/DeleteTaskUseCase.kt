@@ -8,3 +8,4 @@ class DeleteTaskUseCase(private val repository: TaskRepository) {
         repository.deleteTask(task)
     }
 }
+
