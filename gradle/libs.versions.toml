@@ -19,9 +19,9 @@ materialIconsCore = "1.7.3"
 materialIconsExtended = "1.7.3"
 navigationCompose = "2.8.2"
 roomKtx = "2.6.1"
-roomKtxVersion = "2.6.0"
+roomKtxVersion = "2.6.1"
 roomRuntime = "2.6.1"
-roomRuntimeVersion = "2.6.0"
+roomRuntimeVersion = "2.6.1"
 ui = "1.7.3"
 
 

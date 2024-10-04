@@ -4,10 +4,6 @@ plugins {
     id ("kotlin-kapt")
 }
 
-kapt {
-    correctErrorTypes = true
-}
-
 android {
     namespace = "com.example.todolistapp"
     compileSdk = 34
@@ -94,9 +90,9 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
     // Room components
-    implementation ("androidx.room:room-runtime:2.5.0")
-    kapt ("androidx.room:room-compiler:2.5.0")
+    implementation ("androidx.room:room-runtime:2.6.1")
+    kapt ("androidx.room:room-compiler:2.6.1")
 
     // Optional: Room Kotlin extensions
-    implementation ("androidx.room:room-ktx:2.5.0")
+    implementation ("androidx.room:room-ktx:2.6.1")
 }
