@@ -1,7 +1,12 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id ("kotlin-kapt")
+    id("kotlin-kapt")
+
+}
+
+kapt {
+    correctErrorTypes = true
 }
 
 android {
@@ -41,7 +46,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.3"
+        kotlinCompilerExtensionVersion = "1.5.2"
     }
     packaging {
         resources {
@@ -91,8 +96,10 @@ dependencies {
 
     // Room components
     implementation ("androidx.room:room-runtime:2.6.1")
+    implementation ("org.xerial:sqlite-jdbc:3.36.0.3")
     kapt ("androidx.room:room-compiler:2.6.1")
 
-    // Optional: Room Kotlin extensions
+// Optional: Room Kotlin extensions
     implementation ("androidx.room:room-ktx:2.6.1")
+
 }
